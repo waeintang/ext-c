@@ -1,0 +1,11 @@
+#summary Introduction to the ExtC (Extract Class) Refactoring Eclipse plug-in.
+#labels Featured
+
+= Introduction =
+
+The ExtC Visualizer helps the programmer understand the class structure by visually emphasizing important
+features of the class's members and their inter-relationships.
+It also helps users see how various clustering
+algorithms group the class's members. These insights help
+a programmer choose appropriate techniques for refactoring
+large classes.

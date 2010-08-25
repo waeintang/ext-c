@@ -1,0 +1,10 @@
+#summary Installation instructions for the Extract Class Refactoring Eclipse plug-in
+
+(This page is under construction.)
+
+= Dependencies =
+
+  * Java 1.5 or greater
+  * Eclipse 3.5.1 or greater
+  * Metrics plug-in
+  * Derby database plug-in

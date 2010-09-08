@@ -1,0 +1,7 @@
+#summary Documentation on the ExtC Class Refactoring Eclipse Plugin
+
+= Papers =
+
+[http://ecs.victoria.ac.nz/twiki/pub/Main/TechnicalReportSeries/ECSTR10-17.pdf Visualizing Class Refactoring via Clustering]
+
+[http://portal.acm.org/citation.cfm?id=1747491.1747563 Towards Automating Class-Splitting Using Betweenness Clustering]

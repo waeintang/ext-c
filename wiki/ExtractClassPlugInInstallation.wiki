@@ -9,3 +9,111 @@
   * Eclipse 3.5.1 or greater
   * Metrics plug-in
   * Derby database plug-in
+
+= From Source =
+The project is hosted at http://code.google.com/p/ext-c/.
+ 
+Download the source from the command line: svn checkout https://ext-c.googlecode.com/svn/trunk
+
+Download the source into Eclipse:
+  # File -> Import -> SVN -> Checkout Projects from SVN (Next)
+  # Use repository location  https://ext-c.googlecode.com/svn/trunk (Next)
+  # Select Folder trunk (Next)
+  # Checkout From SVN
+    # Check out as a project in the workspace
+    # Check out HEAD revision
+    # Allow unversioned obstructions (Finish)
+
+= Customization =
+There is a limited amount of customization that can be done by setting system properties when eclipse is started, e.g. by supplying “-D” command line arguments e.g.:
+{{{
+    eclipse -vmargs -Xms128m -Xmx512m -XX:MaxPermSize=128m  -Dextc.properties=H:\workspace\ClassRefactoringPlugin\extc.properties
+}}}
+
+ExtC recognizes the following properties:
+  # *extc.project.root* indicates where files should be read or written by default, e.g. graph images.
+  # *extc.properties*  indicates the location of a property file that contains additional customizable parameters.
+
+= Example Property File (extc.properties) =
+Most of these properties can be modified via the Graph View of the UI.  They are mostly for convenience for setting preferences or for running in batch mode.
+{{{
+### Parameters influencing the graph construction and display
+# These keys should be kept consistent with
+# nz.ac.vuw.ecs.kcassell.utils.ParameterConstants
+
+# See edu.uci.ics.jung.graph.util.EdgeType enum for acceptable values
+edgeType=DIRECTED
+
+# See nz.ac.vuw.ecs.kcassell.callgraph.gui.GraphLayoutEnum for acceptable values
+graphLayout=FRLayout
+
+# see nz.ac.vuw.ecs.kcassell.callgraph.ScoreType for acceptable values
+nodeSizing=Authority
+
+# Indicates which graph nodes should be condensed into a single node.
+condenseInherited=true
+condenseObjectMethods=false
+condenseInterfaces=true
+condenseRecursiveCycles=false
+
+# Indicates which nodes should be removed from the graph
+filterObject = true
+
+# should constructors be shown in the graph? */
+includeConstructors = false
+
+# preferred colors for graph nodes and edges.
+# RGB value consisting of the red component
+# in bits 16-23, the green component in bits 8-15,
+# and the blue component in bits 0-7
+# see http://www.web-source.net/216_color_chart.htm
+fieldColor         = 0x3333CC
+methodColor        = 0xFFFFFF
+connectedEdgeColor = 0x000000
+deletedEdgeColor   = 0xDDDDDD
+unpickedColor      = 0x000000
+pickedColor        = 0x00FFFF
+
+### Parameters influencing class selection
+
+# The max size threshold for the number of members in a class.
+maxMembers = 20
+
+
+### Parameters influencing clustering
+
+# the clusterer to use
+# see nz.ac.vuw.ecs.kcassell.similarity.ClustererEnum
+clusterer=Mixed_Mode
+
+# the distance calculator to use for agglomerative clustering
+# see nz.ac.vuw.ecs.kcassell.similarity.DistanceCalculatorEnum
+distanceCalculator=Identifier
+
+# Tokens from identifiers that shouldn't be considered properties
+identifierPartsToIgnore=get,set,m,i,d,l,s
+
+# Link type (how to combine clusters) for agglomerative clustering
+# see Jain, Murphy, and Flynn, "Data clustering: a review",
+# ACM Computing Surveys, 1999
+# acceptable value are static strings in MatrixBasedAgglomerativeClusterer
+linkType = single
+
+# how many new betweenness clusters should be created
+newBetweennessClusters = 1
+
+}}}
+
+= Graphing =
+
+Clicking on the graph icon will bring up ExtC in graph mode for the file currently being edited in Eclipse, assuming that the file is part of an Eclipse project.  This enables the following tabs of ExtC:
+  * Graph
+  * Betweenness 
+  * Agglomeration
+  * Spanning Forest
+Of these, Graph and Betweenness will probably be the most useful.  Agglomeration is in the midst of revision.
+
+= Metrics =
+The installation includes my enhancements to the metrics2 (http://sourceforge.net/projects/metrics2/)   Eclipse plug-in.  Using metrics2, you can collect OO metrics on your Eclipse project.  With additional work, you can save the metric data to a Derby database.  ExtC can run queries on that database and display the results in the Metrics View.  Clicking on a row in the Metrics View will display that class in the Graph View (and others).
+
+I haven't yet prepared instructions for the database set up.

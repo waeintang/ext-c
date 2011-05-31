@@ -14,19 +14,19 @@ ExtC makes use of the following open-source packages.  The libraries are include
 == Eclipse Plugins ==
 
   * [http://sourceforge.net/projects/metrics2/ net.sourceforge.metrics]  collects software metrics and can store them to a database.  An alpha version of the 2.0 release is provided with extc.  License - CPL1.0, the same license as Eclipse itself .
-  * [http://db.apache.org/derby/ Apache Derby] or.g.apache.derby.core 10.5.3 (optional) provides database functionality.  License - Apache License, Version 2.0 (http://www.apache.org/licenses/)
-  * [http://db.apache.org/derby/ Apache Derby] org.apache.derby.plugin.doc (optional) provides database functionality.  License - Apache License, Version 2.0 (http://www.apache.org/licenses/)
-  * [http://db.apache.org/derby/ Apache Derby] org.apache.derby.ui (optional) provides database functionality.  License - Apache License, Version 2.0 (http://www.apache.org/licenses/)
+  * [http://db.apache.org/derby/ Apache Derby] or.g.apache.derby.core 10.5.3 (optional) provides database functionality.  License - [http://www.apache.org/licenses/ Apache License, Version 2.0]
+  * [http://db.apache.org/derby/ Apache Derby] org.apache.derby.plugin.doc (optional) provides database functionality.  License - [http://www.apache.org/licenses/ Apache License, Version 2.0]
+  * [http://db.apache.org/derby/ Apache Derby] org.apache.derby.ui (optional) provides database functionality.  License - [http://www.apache.org/licenses/ Apache License, Version 2.0]
 
 == Libraries ==
   * [http://www.phylosoft.org/archaeopteryx/ Archaeopteryx/forester] provides dendrogram viewing functionality.  License - GNU Lesser General Public License 2.1
   * [http://larvalabs.com/collections/ Collections-generic-4.0.1] is a general-purpose collections package required by Jung.  License - Apache License V2.0
-  * [http://acs.lbl.gov/software/colt/ colt-1.2.0] scientific computing package is required by JUNG.  License - http://acs.lbl.gov/software/colt/license.html.
+  * [http://acs.lbl.gov/software/colt/ colt-1.2.0] scientific computing package is required by JUNG.  License [http://acs.lbl.gov/software/colt/license.html here].
   * [http://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/concurrent/intro.html concurrent-1.3.4.jar] contains utility   packages for concurrent programming and is required by JUNG.   No license required.
   * [http://www.jibble.org/epsgraphics/ epsdump] provides a way to dump java graphics to an EPS file.  License - formerly GPL, now has a license fee.
-  * [http://www.json.org/java/index.html json-extracts] provides a data interchange format.  License at https://github.com/douglascrockford/JSON-java.
+  * [http://www.json.org/java/index.html json-extracts] provides a data interchange format.  License [https://github.com/douglascrockford/JSON-java here].
   * [http://jung.sourceforge.net/ jung 2.0] provides graph visualizations, algorithms, and more. License - Berkeley Software Distribution (BSD) license (http://jung.sourceforge.net/site/jung-graph-impl/license.html). 
-  * [http://code.google.com/p/airhead-research/ lsa-vsm] License - GPL v. 2. (http://code.google.com/p/airhead-research/wiki/LicenseAndRestrictions).
+  * [http://code.google.com/p/airhead-research/ S-Space lsa-vsm] provides semantic space functionality.  License - [http://code.google.com/p/airhead-research/wiki/LicenseAndRestrictions GPL v. 2].
   * [http://stax.codehaus.org/Home Streaming API for XML] stax-api-1.0.1 provides XML capabilities required by JUNG.  License - Apache License 2.0
   * [http://woodstox.codehaus.org/ Woodstox] wstx-asl-3.2.6 is an XML processor required by JUNG.  Licenses: Free Software Foundataion's LGPL 2.1 and Apache Foundation's ASL 2.0.
 

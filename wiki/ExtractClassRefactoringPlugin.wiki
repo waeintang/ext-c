@@ -9,3 +9,5 @@ It also helps users see how various clustering
 algorithms group the class's members. These insights help
 a programmer choose appropriate techniques for refactoring
 large classes.
+
+This [http://code.google.com/p/ext-c/wiki/ExtractClassPlugInInstallation page] has installation instructions for the Eclipse plugins.

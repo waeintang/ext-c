@@ -32,8 +32,17 @@ ExtC makes use of the following open-source packages.  The libraries are include
 
 =Installing =
 
-Install the plugins listed in the Dependencies section (metrics2 and Apache Derby).  Then, install ext-c using either the pre-built plugins or the available source.
+Install the plugins listed in the Dependencies section (metrics2 and Apache Derby).  Then, install ext-c using either the pre-built plugins or the available source.  Your dropins directory should end up looking something like:
+{{{
+plugins
+plugins/org.apache.derby.ui_1.1.2/*
+plugins/classRefactoringPlugin_1.0.0.201108031258.jar
+plugins/org.apache.derby.core_10.5.3/*
+plugins/org.apache.derby.plugin.doc_1.1.2/*
+plugins/net.sourceforge.metrics_2.0.0.201105311430.jar
+}}}
 
+This [http://stackoverflow.com/questions/1489648/eclipse-doesnt-load-plugins-in-the-dropins-folder/3295170#3295170 web page] addresses problems with installing plugins/dropins.
 == Installing from pre-built plugins ==
 
 Download the most recent ClassRefactoringPlugin from http://code.google.com/p/ext-c/downloads/list and place it in your Eclipse dropins directory.

@@ -5,15 +5,15 @@
 
 = Dependencies =
 
-ExtC makes use of the following open-source packages.  The libraries are included in the distribution.  The plugins should be installed independently.  Each of these packages may themselves rely on other open-source packages.  Please see their web pages for their up-to-date dependencies.
+ExtC makes use of the following open-source packages.  The libraries are included in the distribution and should require no effort on your part to install.  The plugins need to be installed independently.  Each of the required packages may themselves rely on other open-source packages.  Please see their web pages for their up-to-date dependencies.
 
 == Platform ==
-  * Java 1.5 or greater
+  * Java 1.6 or greater
   * Eclipse 3.5.1 or greater
 
 == Eclipse Plugins ==
 
-  * [http://sourceforge.net/projects/metrics2/ net.sourceforge.metrics]  collects software metrics and can store them to a database.  An alpha version of the 2.0 release is provided with extc.  License - CPL1.0, the same license as Eclipse itself .
+  * [http://sourceforge.net/projects/metrics2/ net.sourceforge.metrics]  collects software metrics and can store them to a database.  An alpha version of the 2.0 release is provided with extc in the Downloads page.  License - CPL1.0, the same license as Eclipse itself .
   * [http://db.apache.org/derby/ Apache Derby] or.g.apache.derby.core 10.5.3 (optional) provides database functionality.  License - [http://www.apache.org/licenses/ Apache License, Version 2.0]
   * [http://db.apache.org/derby/ Apache Derby] org.apache.derby.plugin.doc (optional) provides database functionality.  License - [http://www.apache.org/licenses/ Apache License, Version 2.0]
   * [http://db.apache.org/derby/ Apache Derby] org.apache.derby.ui (optional) provides database functionality.  License - [http://www.apache.org/licenses/ Apache License, Version 2.0]
@@ -30,7 +30,15 @@ ExtC makes use of the following open-source packages.  The libraries are include
   * [http://stax.codehaus.org/Home Streaming API for XML] stax-api-1.0.1 provides XML capabilities required by JUNG.  License - Apache License 2.0
   * [http://woodstox.codehaus.org/ Woodstox] wstx-asl-3.2.6 is an XML processor required by JUNG.  Licenses: Free Software Foundataion's LGPL 2.1 and Apache Foundation's ASL 2.0.
 
-= From Source =
+=Installing =
+
+Install the plugins listed in the Dependencies section (metrics2 and Apache Derby).  Then, install ext-c using either the pre-built plugins or the available source.
+
+== Installing from pre-built plugins ==
+
+Download the most recent ClassRefactoringPlugin from http://code.google.com/p/ext-c/downloads/list and place it in your Eclipse dropins directory.
+
+== Installing from source ==
 The project is hosted at http://code.google.com/p/ext-c/.
  
 Download the source from the command line: svn checkout https://ext-c.googlecode.com/svn/trunk

@@ -42,7 +42,7 @@ plugins/org.apache.derby.plugin.doc_1.1.2/*
 plugins/net.sourceforge.metrics_2.0.0.201105311430.jar
 }}}
 
-This [http://stackoverflow.com/questions/1489648/eclipse-doesnt-load-plugins-in-the-dropins-folder/3295170#3295170 web page] addresses problems with installing plugins/dropins.
+This [http://stackoverflow.com/questions/1489648/eclipse-doesnt-load-plugins-in-the-dropins-folder/ web page] addresses problems with installing plugins/dropins.
 == Installing from pre-built plugins ==
 
 Download the most recent ClassRefactoringPlugin from http://code.google.com/p/ext-c/downloads/list and place it in your Eclipse dropins directory.
